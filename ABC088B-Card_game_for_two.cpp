@@ -16,7 +16,7 @@ int main() {
     int Alice = 0;
     int Bob = 0;
 
-    sort(card, card + N, greater<int>()); // 昇順ソート 
+    sort(card, card + N, greater<int>()); // 降順ソート 
     for(int i = 0; i < N; ++i) {
         if (i % 2 == 0) {
             // 偶数番目はアリスのターン
