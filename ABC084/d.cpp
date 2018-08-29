@@ -36,7 +36,7 @@ int main(void) {
     }
     
     // 先に累積和をすべて出し、その累積和の差分で各個数を求める
-    FOR(i, 1, Q + 100) {
+    FOR(i, 1, 100100) {
         sum[i] = sum[i - 1];
         bool found = find(primeNumber.begin(), primeNumber.end(), i) != primeNumber.end();
         if (!found) { continue; } // iが素数でなければ飛ばす
@@ -45,9 +45,6 @@ int main(void) {
         if (found_second) { sum[i] += 1; }
     } 
 
-    FOR(i, 0 , Q) {
-        cout << sum[r[i]] - sum[l[i] - 1] << endl;
-    }
-
+    FOR(i, 0 , Q) { cout << sum[r[i]] - sum[l[i] - 1] << endl; }
     return 0;
 }
