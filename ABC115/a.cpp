@@ -20,14 +20,21 @@ int main(void) {
     li d;
     cin >> d;
 
-    if (d == 25) {
+    switch (d) {
+        case 25:
         cout << "Christmas";
-    } else if (d == 24) {
+        break;
+        case 24:
         cout << "Christmas Eve";
-    } else if (d == 23) {
+        break;
+        case 23:
         cout << "Christmas Eve Eve";
-    } else if (d == 22) {
+        break;
+        case 22:
         cout << "Christmas Eve Eve Eve";
+        break;
+        default:
+        break;
     }
 
     return 0;
